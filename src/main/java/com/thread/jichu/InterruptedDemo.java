@@ -16,6 +16,7 @@ public class InterruptedDemo {
                   sleep(5000);
               } catch (InterruptedException e) {
                   e.printStackTrace();
+             //     Thread.currentThread().interrupt();
               }
               System.out.println("26行"+interrupted);      //false
           }
@@ -31,6 +32,7 @@ public class InterruptedDemo {
         /**
          * 如果36行执行在26行或异常之前则为true  在后则为false
          * 可以得出 InterruptedException 会把 isInterrupted 置为false
+         * 避免的方法可以在catch中在调运一次interrupt()  如19行
          */
     }
 }
