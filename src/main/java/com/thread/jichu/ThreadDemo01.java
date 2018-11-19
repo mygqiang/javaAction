@@ -28,6 +28,7 @@ public class ThreadDemo01 {
       Thread t2 = new Thread(et);
       t.start();
       t2.start();
+
         System.out.println("我能先行一步吗");
        /* System.out.println( Thread.currentThread().isInterrupted());
         Thread.currentThread().interrupt();
