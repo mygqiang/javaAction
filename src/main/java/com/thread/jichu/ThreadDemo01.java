@@ -29,6 +29,12 @@ public class ThreadDemo01 {
       t.start();
       t2.start();
         System.out.println("我能先行一步吗");
+       /* System.out.println( Thread.currentThread().isInterrupted());
+        Thread.currentThread().interrupt();
+        System.out.println( Thread.currentThread().isInterrupted());
+       Thread.interrupted();
+        System.out.println( Thread.currentThread().isInterrupted());*/
+
     }
 }
 
